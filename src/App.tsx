@@ -27,7 +27,11 @@ function App() {
               <b>Result</b>:
             </p>
             {isValidUrl(JSON.parse(scannedData)?.rawValue) ? (
-              <a href={JSON.parse(scannedData)?.rawValue} target="_blank">
+              <a
+                href={JSON.parse(scannedData)?.rawValue}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {JSON.parse(scannedData)?.rawValue}
               </a>
             ) : (
