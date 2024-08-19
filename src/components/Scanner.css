@@ -1,0 +1,22 @@
+.scanner {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+video {
+  margin: 0 auto;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+svg {
+  /* modify the boundingBox style here */
+  border: 0 !important;
+}
+
+svg path {
+  /* modify the camera focus style here */
+  stroke: !important;
+  stroke-width: 2;
+}

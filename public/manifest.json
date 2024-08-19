@@ -1,0 +1,15 @@
+{
+  "short_name": "QR Scanner",
+  "name": "Simple QR Scanner",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#838996",
+  "background_color": "#989898",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "512x512 256x256 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
