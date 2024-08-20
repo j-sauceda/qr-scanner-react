@@ -1,4 +1,5 @@
 import { useState } from "react";
+import isURL from "validator/lib/isURL";
 import QRCodeScanner from "./components/QRCodeScanner";
 
 import "./App.css";
@@ -12,11 +13,6 @@ function App() {
     console.log(data);
   };
 
-  function isValidUrl(url: string): boolean {
-    const urlRegex = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})\/([\w.-]*)*\/?$/;
-    return urlRegex.test(url);
-  }
-
   return (
     <div className="container">
       <div className="header">Simple QR Scanner</div>
@@ -26,7 +22,7 @@ function App() {
             <p>
               <b>Result</b>:
             </p>
-            {isValidUrl(JSON.parse(scannedData)?.rawValue) ? (
+            {isURL(JSON.parse(scannedData)?.rawValue) ? (
               <a
                 href={JSON.parse(scannedData)?.rawValue}
                 target="_blank"
