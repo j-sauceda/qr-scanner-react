@@ -33,7 +33,7 @@ const QRCodeScanner: FC<QRCodeScannerProps> = ({
     <Scanner
       allowMultiple={false}
       classNames={{ container: "scanner" }}
-      components={{ audio: false, finder: false }}
+      components={{ audio: false, finder: false, zoom: true }}
       constraints={{ aspectRatio: 1.0, facingMode: "environment" }}
       onError={handleError}
       onScan={(res) => handleScan(res)}
