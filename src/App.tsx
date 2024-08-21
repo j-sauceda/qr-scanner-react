@@ -10,7 +10,6 @@ function App() {
 
   const handleScan = (data: string) => {
     setScannedData(data);
-    console.log(data);
   };
 
   return (
