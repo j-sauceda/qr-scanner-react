@@ -33,7 +33,7 @@ export default defineConfig({
   },
   build: {
     assetsDir: "",
-    outDir: "dist",
+    outDir: "build",
     rollupOptions: {
       output: {
         assetFileNames: "[name].[ext]",
