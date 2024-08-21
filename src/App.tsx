@@ -15,7 +15,9 @@ function App() {
 
   return (
     <div className="container">
-      <div className="header">Simple QR Scanner</div>
+      <div className="header" id="header">
+        Simple QR Scanner
+      </div>
       <div className="content">
         {scannedData ? (
           <div style={{ margin: "10%", overflowWrap: "break-word" }}>
