@@ -25,6 +25,20 @@ export default defineConfig({
         ],
       },
       registerType: "autoUpdate",
+      workbox: {
+        runtimeCaching: [
+          {
+            handler: "StaleWhileRevalidate",
+            urlPattern: "https://html-css-js-simple-playground.netlify.app/",
+            options: {
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24,
+              },
+            },
+          },
+        ],
+      },
     }),
   ],
   server: {
