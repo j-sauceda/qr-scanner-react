@@ -29,7 +29,7 @@ export default defineConfig({
         runtimeCaching: [
           {
             handler: "StaleWhileRevalidate",
-            urlPattern: "https://html-css-js-simple-playground.netlify.app/",
+            urlPattern: "https://qr-scanner-jsauceda.netlify.app/",
             options: {
               cacheName: "main-cache",
               expiration: {
