@@ -31,6 +31,7 @@ export default defineConfig({
             handler: "StaleWhileRevalidate",
             urlPattern: "https://html-css-js-simple-playground.netlify.app/",
             options: {
+              cacheName: "main-cache",
               expiration: {
                 maxEntries: 10,
                 maxAgeSeconds: 60 * 60 * 24,
