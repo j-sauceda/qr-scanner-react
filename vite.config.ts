@@ -28,9 +28,9 @@ export default defineConfig({
       workbox: {
         runtimeCaching: [
           {
-            handler: "StaleWhileRevalidate",
+            handler: "NetworkFirst",
             urlPattern: new RegExp(
-              "^https://qr-scanner-jsauceda.netlify.app/(.*)$"
+              "^https://qr-scanner-jsauceda.netlify.app/(?!.*-).*\\.[^-]+$"
             ),
             options: {
               cacheName: "main-cache",
