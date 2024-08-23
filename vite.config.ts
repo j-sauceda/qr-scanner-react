@@ -29,7 +29,9 @@ export default defineConfig({
         runtimeCaching: [
           {
             handler: "StaleWhileRevalidate",
-            urlPattern: new RegExp("^https://qr-scanner-jsauceda.netlify.app/"),
+            urlPattern: new RegExp(
+              "^https://qr-scanner-jsauceda.netlify.app/(.*)$"
+            ),
             options: {
               cacheName: "main-cache",
               expiration: {
